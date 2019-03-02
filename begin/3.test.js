@@ -6,5 +6,5 @@ test("should return correct results", () => {
 });
 
 test("should return correct results", () => {
-  expect(S(2, 3)).toBe(5);
+  expect(S(2, 3)).toBe(6);
 });
