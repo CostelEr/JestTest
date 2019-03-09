@@ -9,7 +9,7 @@
 
 function Per(x1, y1, x2, y2, x3, y3) {
   /** Aflam lungimea laturii a */
-  let L11 = (x2 - x1) * (x2 - x1);
+  let L11 = Math.pow(x2 - x1, 2);
   let L12 = (y2 - y1) * (y2 - y1);
   let a = Math.sqrt(L11 + L12);
 
