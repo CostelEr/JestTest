@@ -7,7 +7,7 @@ function Choc(x, a, y, b) {
   let z = [];
   z[0] = Number((a / x).toFixed(2));
   z[1] = Number((b / y).toFixed(2));
-  z[2] = Number((z[0] / z[1]).toFixed(2));
+  z[2] = Number((a / x / (b / y)).toFixed(2));
   return z;
 }
 module.exports = { Choc };
