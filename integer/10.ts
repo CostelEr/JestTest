@@ -5,6 +5,6 @@
 export function ZU(A: number) {
   let B = [];
   B[0] = A % 10;
-  B[0] = A - trunc(A / 10) * 10;
-  return Math.trunc(A / 100);
+  B[1] = ((A - B[0]) / 10) % 10;
+  return B;
 }
