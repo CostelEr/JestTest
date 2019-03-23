@@ -3,5 +3,5 @@
      Find an amount of seconds passed from the beginning of the last minute.
  */
 export function Last(A: number) {
-  return Math.trunc(A % 60);
+  return A % 60;
 }
