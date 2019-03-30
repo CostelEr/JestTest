@@ -1,6 +1,6 @@
 /**
- Given a three-digit integer, verify the following proposition: 
- "All digits of the number are in ascending or descending order".
+ Given a four-digit integer, verify the following proposition: 
+ "The number is read equally both from left to right and from right to left".
  */
 export function Condition(A: number) {
   let B = [];
