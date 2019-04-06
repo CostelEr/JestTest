@@ -6,6 +6,7 @@
 export function F(A, B, C: number) {
   let Point = B;
   let D = parseFloat(Math.abs(B - A).toFixed(2));
+
   if (Math.abs(C - A) < Math.abs(B - A)) {
     Point = C;
     D = parseFloat(Math.abs(C - A).toFixed(2));
