@@ -1,12 +1,15 @@
 /**
-  A number of month is given (as an integer in the range 1 to 12): 
-  1 — January, 2 — February, etc. Output the amount of days in the month for a non-leap year.
+  The arithmetic operations are numbered as: 
+  1 — addition, 2 — subtraction, 3 — multiplication, 4 — division. 
+  The order number N of an operation and two real numbers A and B are given 
+  (N is an integer in the range 1 to 4, В is not equal to 0). 
+  Perform the operation with the operands A and B and output the result.
  */
 export function F(N, A, B: number) {
   let D = 0;
   switch (N) {
     case 1:
-      parseFloat((A + B).toFixed(2));
+      D = parseFloat((A + B).toFixed(2));
       break;
     case 2:
       D = parseFloat((A - B).toFixed(2));
