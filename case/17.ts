@@ -1,10 +1,24 @@
 /**
-    Given an age in years (as an integer in the range 20 to 69), 
-    output its alphabetic equivalent as: "twenty years", "thirty-two years", "forty-one years", etc.
+    Given an order number of some training task (as an integer in the range 10 to 40), 
+    output its alphabetic equivalent as: "the eighteenth task", "the twenty-third task", 
+    "the thirtieth task", etc.
  */
 export function F(N: number) {
   let Years = "";
   let Z = Math.trunc(N / 10);
+
+  /*  
+10. the tenth
+11. the eleventh task
+12. the twelfth
+13. the thirteenth task
+14. the fourteenth task
+15. the fifteenth task
+16. the sixteenth task
+17. the seventeenth task
+18. eighteenth task
+19. the nineteenth task
+*/
   switch (Z) {
     case 2:
       Years = "twenty";
