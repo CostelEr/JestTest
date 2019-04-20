@@ -4,68 +4,85 @@
     "the thirtieth task", etc.
  */
 export function F(N: number) {
-  let Years = "";
+  let Tasks = "";
   let Z = Math.trunc(N / 10);
 
-  /*  
-10. the tenth
-11. the eleventh task
-12. the twelfth
-13. the thirteenth task
-14. the fourteenth task
-15. the fifteenth task
-16. the sixteenth task
-17. the seventeenth task
-18. eighteenth task
-19. the nineteenth task
-*/
-  switch (Z) {
-    case 2:
-      Years = "twenty";
+  switch (N) {
+    case 10:
+      Tasks = "the tenth";
       break;
-    case 3:
-      Years = "thirty";
+    case 11:
+      Tasks = "the eleventh";
       break;
-    case 4:
-      Years = "forty";
+    case 12:
+      Tasks = "the twelfth";
       break;
-    case 5:
-      Years = "fifty";
+    case 13:
+      Tasks = "the thirteenth";
       break;
-    case 6:
-      Years = "sixty";
+    case 14:
+      Tasks = "the fourteenth";
+      break;
+    case 15:
+      Tasks = "the fifteenth";
+      break;
+    case 16:
+      Tasks = "the sixteenth";
+      break;
+    case 17:
+      Tasks = "the seventeenth";
+      break;
+    case 18:
+      Tasks = "the eighteenth";
+      break;
+    case 19:
+      Tasks = "the nineteenth";
+      break;
+
+    default:
+      switch (Z) {
+        case 2:
+          Tasks = "the twenty";
+          break;
+        case 3:
+          Tasks = "the thirty";
+          break;
+        case 4:
+          Tasks = "the forty";
+          break;
+      }
+      let U = N % 10;
+      switch (U) {
+        case 1:
+          Tasks = Tasks.concat("-one");
+          break;
+        case 2:
+          Tasks = Tasks.concat("-two");
+          break;
+        case 3:
+          Tasks = Tasks.concat("-three");
+          break;
+        case 4:
+          Tasks = Tasks.concat("-four");
+          break;
+        case 5:
+          Tasks = Tasks.concat("-five");
+          break;
+        case 6:
+          Tasks = Tasks.concat("-six");
+          break;
+        case 7:
+          Tasks = Tasks.concat("-seven");
+          break;
+        case 8:
+          Tasks = Tasks.concat("-eight");
+          break;
+        case 9:
+          Tasks = Tasks.concat("-nine");
+          break;
+      }
       break;
   }
-  let U = N % 10;
-  switch (U) {
-    case 1:
-      Years = Years.concat("-one");
-      break;
-    case 2:
-      Years = Years.concat("-two");
-      break;
-    case 3:
-      Years = Years.concat("-three");
-      break;
-    case 4:
-      Years = Years.concat("-four");
-      break;
-    case 5:
-      Years = Years.concat("-five");
-      break;
-    case 6:
-      Years = Years.concat("-six");
-      break;
-    case 7:
-      Years = Years.concat("-seven");
-      break;
-    case 8:
-      Years = Years.concat("-eight");
-      break;
-    case 9:
-      Years = Years.concat("-nine");
-      break;
-  }
-  Years = Years.concat(" years");
-  return Years;
+  Tasks = Tasks.concat(" tasks");
+  return Tasks;
 }
