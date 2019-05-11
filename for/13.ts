@@ -1,5 +1,8 @@
 /**
-   Problem 13
+   Given an integer N (> 0), find the value of the following 
+   expression of N terms with alternating signs:
+   1.1 − 1.2 + 1.3 − … .
+   Do not use conditional statements.
  */
 export function F(N: number) {
   let i = 0;

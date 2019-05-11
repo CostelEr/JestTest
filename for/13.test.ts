@@ -1,4 +1,4 @@
-import { F } from "./12";
+import { F } from "./13";
 test("should return correct results", () => {
   expect(F(1)).toEqual(1.1);
   expect(F(8)).toEqual(17.643226);
