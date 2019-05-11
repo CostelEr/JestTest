@@ -3,7 +3,7 @@
  1 − X2/(2!) + X4/(4!) − … + (−1)N·X2·N/((2·N)!)
  (N! = 1·2·…·N). The result is an approximate value of cos(X).
  */
-export function F(X, N: number) {
+export function F(X: number, N: number) {
   let i = 0;
   let NF = 1;
   let XN = 1;
