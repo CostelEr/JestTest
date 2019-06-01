@@ -6,8 +6,14 @@
 export function F(N, K: number) {
   let i = 0;
   let sum = 0;
+  let j = 0;
+  let sum1 = 1;
   for (i = 1; i <= N; i++) {
-    sum = sum + Math.pow(i, K);
+    sum1 = 1;
+    for (j = 1; j <= K; j++) {
+      sum1 = sum1 * i;
+    }
+    sum = sum + sum1;
   }
   return sum;
 }
