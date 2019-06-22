@@ -1,4 +1,4 @@
-import { F } from "./12";
+import { F } from "./13";
 test("should return correct results", () => {
   expect(F(10)).toEqual([4, 10]);
   expect(F(7)).toEqual([3, 6]);
