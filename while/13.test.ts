@@ -1,10 +1,8 @@
 import { F } from "./13";
 test("should return correct results", () => {
-  expect(F(10)).toEqual([4, 10]);
-  expect(F(7)).toEqual([3, 6]);
-  expect(F(8)).toEqual([3, 6]);
-  expect(F(9)).toEqual([3, 6]);
-  expect(F(35)).toEqual([7, 28]);
-  expect(F(13)).toEqual([4, 10]);
-  expect(F(5)).toEqual([2, 3]);
+  expect(F(1.68884)).toEqual([3, 1.83333]);
+  expect(F(2.05865)).toEqual([4, 2.08333]);
+  expect(F(2.59837)).toEqual([8, 2.71786]);
+  expect(F(3.53869)).toEqual([19, 3.54774]);
+  expect(F(4.75187)).toEqual([65, 4.75928]);
 });
