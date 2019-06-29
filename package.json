@@ -12,5 +12,10 @@
     "install": "^0.12.2",
     "ts-node": "^8.0.3",
     "typescript": "^3.3.3333"
-  }
+  },
+  "name": "JestTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CostelEr/JestTest.git",
+  "license": "MIT"
 }

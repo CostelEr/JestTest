@@ -8,13 +8,13 @@ export function F(E: number) {
   let a = [];
   a[0] = 2;
   let k = 1;
-  a[k] = 2 + a[k - 1];
+  a[k] = 2 + 1/a[k - 1];
 
-  while (Math.abs(a[k] - a[k - 1]) > E) {
+  while (Math.abs(a[k] - a[k - 1]) >= E) {
     k = k + 1;
-    a[k] = 2 + a[k - 1];
+    a[k] = 2 + 1/a[k - 1];
   }
   a[k - 1] = parseFloat(a[k - 1].toFixed(6));
   a[k] = parseFloat(a[k].toFixed(6));
-  return [k, a[k - 1], a[k]];
+  return [k+1, a[k - 1], a[k]];
 }
