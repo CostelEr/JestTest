@@ -1,6 +1,6 @@
 import { F } from "./09";
 test("should return correct results", () => {
-  expect(F(8, [2, 3, 6, 4, 9, 7, 10, 2])).toEqual([[3, 9, 7], 3]);
-  expect(F(9, [8, 3, 1, 6, 7, 2, 3, 3, 8])).toEqual([[3, 1, 7, 3, 3], 5]);
-  expect(F(4, [6, 9, 6, 2])).toEqual([[9], 1]);
+  expect(F(5, [5, 6, 7, 4, 4])).toEqual([[4, 4, 6], 3]);
+  expect(F(8, [2, 10, 1, 5, 9, 4, 4, 7])).toEqual([[4, 4, 10, 2], 4]);
+  expect(F(3, [10, 5, 6])).toEqual([[6, 10], 2]);
 });

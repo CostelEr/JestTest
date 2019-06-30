@@ -7,8 +7,8 @@ export function F(N: number, A: array) {
   let i = 0;
   let j = 0;
   let B = [];
-  for (i = 0; i <= N - 1; i++) {
-    if (A[i] % 2 == 1) {
+  for (i = N - 1; i >= 0; i--) {
+    if (A[i] % 2 == 0) {
       B[j] = A[i];
       j = j + 1;
     }
