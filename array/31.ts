@@ -1,5 +1,5 @@
 /**
- Problema 30
+ Problema 31
  */
 export function F(N: number, A: number[]) {
   let i = 0;
