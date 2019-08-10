@@ -1,5 +1,6 @@
 /**
- Problema 32
+  Given an array of N real numbers, find the order number of its first local minimum 
+  (an array element is called the local minimum if it is smaller than its neighbors).
  */
 export function F(N: number, A: number[]) {
   let i = 0;

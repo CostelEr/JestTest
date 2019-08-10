@@ -1,5 +1,6 @@
 /**
- Problema 33
+ Given an array of N real numbers, find the order number of its last local maximum 
+ (an array element is called the local maximum if it is greater than its neighbors).
  */
 export function F(N: number, A: number[]) {
   let i = 0;

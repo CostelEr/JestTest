@@ -1,5 +1,6 @@
 /**
- Problema 34
+ Given an array of N real numbers, find the maximum among its local minimums 
+ (see the local minimum definition in Array32).
  */
 export function F(N: number, A: number[]) {
   let i = 0;

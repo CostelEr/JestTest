@@ -1,5 +1,7 @@
 /**
- Problema 31
+ An array of N real numbers is given. Find the order numbers of array elements 
+ that are greater than their left neighbor. Output these order numbers in descending 
+ order and also output the amount of such elements.
  */
 export function F(N: number, A: number[]) {
   let i = 0;
