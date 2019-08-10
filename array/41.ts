@@ -1,5 +1,6 @@
 /**
- Problema 41
+ Given an array of N real numbers, find two adjacent elements with the maximal sum 
+ of values and output these elements in ascending order of its indices.
  */
 export function F(N: number, A: number[]) {
   let i = 0;

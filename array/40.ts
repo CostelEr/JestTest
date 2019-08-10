@@ -1,5 +1,7 @@
 /**
- Problema 40
+ A real number R and an array A of N real numbers are given. 
+ Find the array element that is the nearest to the number R 
+ (i. e., an element AK such that the value |AK − R| is minimal).
  */
 export function F(R: number, N: number, A: number[]) {
   let i = 0;
