@@ -1,5 +1,6 @@
 /**
- Problema 37
+ Given an array of N real numbers, find the amount of its parts of ascending 
+ (that is, parts that contain elements whose values are in ascending order).
  */
 export function F(N: number, A: number[]) {
   let i = 0;
