@@ -1,5 +1,6 @@
 /**
- Problema 27 
+ Given an array A of N real numbers, find the minimum among elements 
+ with even order numbers: A2, A4, A6, … . 
  */
 export function F(N: number, A: number[]) {
   let i = 0;

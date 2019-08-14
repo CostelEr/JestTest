@@ -1,5 +1,7 @@
 /**
- Problema 27 
+ An array of N nonzero integers is given. If positive and negative numbers 
+ are alternated in the array then output 0, otherwise output the order number 
+ of the first element that breaks the above condition.
  */
 export function F(N: number, A: number[]) {
   let i = 0;

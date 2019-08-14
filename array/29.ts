@@ -1,5 +1,6 @@
 /**
- Problema 29 
+ Given an array A of N real numbers, find the maximum 
+ among elements with odd order numbers: A1, A3, A5, … .
  */
 export function F(N: number, A: number[]) {
   let i = 0;

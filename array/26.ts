@@ -1,5 +1,7 @@
 /**
- Problema 26 
+ An array of N integers is given. If odd and even numbers are alternated 
+ in the array then output 0, otherwise output the order number of the first 
+ element that breaks the above condition.
  */
 export function F(N: number, A: number[]) {
   let i = 0;
