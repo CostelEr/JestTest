@@ -5,21 +5,21 @@
  ascending order of indices (see the definition of two nearest 
  numbers in Array40).
  */
-export function F(N: number, A: number[]) {
+export function F(R: number, N: number, A: number[]) {
   let i = 0;
   let j = 0;
-  let k1 = 1;
-  let k2 = 2;
-  let nearest = Math.abs(A[1] - A[0]);
+  let k1 = 0;
+  let k2 = 1;
+  let nearest = Math.abs(A[1] + A[0] - R);
   for (i = 1; i <= N - 2; i++) {
     for (j = i + 1; j <= N - 1; j++) {
-      if (Math.abs(A[j] - A[i]) < nearest) {
-        nearest = Math.abs(A[j] - A[i]);
-        k1 = i + 1;
-        k2 = j + 1;
+      if (Math.abs(A[j] + A[i] - R) < nearest) {
+        nearest = Math.abs(A[j] + A[i] - R);
+        k1 = i;
+        k2 = j;
       }
     }
   }
 
-  return [k1, k2];
+  return [A[k1], A[k2]];
 }
