@@ -1,5 +1,7 @@
 /**
- Problema 24
+ An array of N distinct integers is given. 
+ If the array elements represent an arithmetic sequence 
+ (see Array3) then output its common difference, otherwise output 0.
  */
 export function F(N: number, A: array) {
   let i = 0;

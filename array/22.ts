@@ -1,5 +1,6 @@
 /**
- Problema 22
+ An array of N real numbers and two integers K and L (1 < K ≤ L ≤ N) are given. 
+ Find the sum of all array elements except ones with the order numbers in the range K to L inclusively.
  */
 export function F(N: number, A: array, K: number, L: number) {
   let i = K;
