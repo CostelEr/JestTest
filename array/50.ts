@@ -1,24 +1,20 @@
 /**
- Array49. An array of N integers is given. If the array is a permutation 
- (i. e., if the array contains all integers in the range 1 to N) then output 0, 
- otherwise output the order number of the first inadmissible element.
+ Array50. An array A of N integers is given, the array is a permutation 
+ (see the permutation definition in Array49). Find the amount of inversions 
+ in this permutation (i. e., the amount of pairs of elements AI and AJ 
+ such that I < J and AI > AJ).
  */
 export function F(N: number, A: number[]) {
   let i = 0;
   let j = 0;
   let k = 0;
 
-  for (i = 0; i <= N - 1; i++) {
-    k = i + 1;
-    for (j = i; j <= N - 1; j++) {
-      if (A[j] == i + 1) {
+  for (i = 0; i <= N - 2; i++) {
+    for (j = i + 1; j <= N - 1; j++) {
+      if (A[i] > A[j]) {
         [A[i], A[j]] = [A[j], A[i]];
-        k = 0;
-        j = N;
+        k = k + 1;
       }
-    }
-    if (k != 0) {
-      i = N;
     }
   }
   return k;
