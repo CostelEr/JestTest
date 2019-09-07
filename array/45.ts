@@ -9,7 +9,7 @@ export function F(N: number, A: number[]) {
   let k1 = 1;
   let k2 = 2;
   let nearest = Math.abs(A[1] - A[0]);
-  for (i = 1; i <= N - 2; i++) {
+  for (i = 0; i <= N - 2; i++) {
     for (j = i + 1; j <= N - 1; j++) {
       if (Math.abs(A[j] - A[i]) < nearest) {
         nearest = Math.abs(A[j] - A[i]);

@@ -8,4 +8,5 @@ test("should return correct results", () => {
   expect(
     F(9, [-2.48, 4.28, -9.06, -4.72, -7.9, -4.71, 8.91, 1.99, -0.29])
   ).toEqual([4, 6]);
+  expect(F(7, [2, 3, 2, 5, 6, 7, 8])).toEqual([1, 3]);
 });
