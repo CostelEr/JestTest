@@ -1,5 +1,5 @@
 /**
- Array 113. 
+ Array 114. 
    An array A of N (≤ 6) real numbers is given. Sort the array in ascending 
    order by using the insertion sort method: compare an element A2 with the 
    first element A1 and exchange their values, if necessary, so that these 
