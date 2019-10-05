@@ -2,7 +2,7 @@
  An array A of N real numbers is given. Output array elements as follows:
  A1,    A2,   AN, AN−1, A3, A4, AN−2,    … .
  */
-export function F(N: number, A: array) {
+export function F(N: number, A = []) {
   let i = 0;
   let j = N - 1;
   let k = 0;
