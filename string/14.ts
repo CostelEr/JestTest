@@ -9,7 +9,7 @@ export function F(C: string) {
   let digits = 0;
 
   let x = C.length - 1;
-  for (i = 0; i < x; i++) {
+  for (i = 0; i <= x; i++) {
     if (C[i] >= "A" && C[i] <= "Z") {
       digits = digits + 1;
     }

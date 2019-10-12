@@ -1,6 +1,6 @@
 /**
-  String 13. 
-   Given a string, find the amount of digits in the string.
+  String 15. 
+   Given a string, find the amount of Latin & Russian small letters in the string.
  */
 
 export function F(C: string) {
@@ -10,7 +10,10 @@ export function F(C: string) {
 
   let x = C.length - 1;
   for (i = 0; i <= x; i++) {
-    if (C[i] >= "0" && C[i] <= "9") {
+    if (C[i] >= "а" && C[i] <= "я") {
+      digits = digits + 1;
+    }
+    if (C[i] >= "a" && C[i] <= "z") {
       digits = digits + 1;
     }
   }
