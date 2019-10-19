@@ -1,5 +1,3 @@
-import { isSwitchCase } from "@babel/types";
-
 /**
   String 24. 
     Given a string with the binary representation of a positive integer, 
