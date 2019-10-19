@@ -2,8 +2,8 @@ import { isSwitchCase } from "@babel/types";
 
 /**
   String 18. 
-   Given a string, convert all Latin capital letters of the string 
-   to lowercase and all Latin small letters of the string to uppercase.
+   Given a string, convert all Latin or Russian capital letters of the string 
+   to lowercase and all Latin or Russian small letters of the string to uppercase.
  */
 
 export function F(C: string) {
