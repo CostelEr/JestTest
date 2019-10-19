@@ -1,7 +1,7 @@
 import { isSwitchCase } from "@babel/types";
 
 /**
-  String 20. 
+  String 21. 
    Given a positive integer, output all digit characters 
    in the decimal representation of the integer (from right to left).
  */
