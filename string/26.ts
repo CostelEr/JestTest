@@ -2,9 +2,11 @@ import { truncate } from "fs";
 import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
 
 /**
-  String 25. 
-    Given a string with the decimal representation of a positive integer, 
-    output a new string with the binary representation of this integer.
+  String 26. 
+    An integer N (> 0) and a string S are given. 
+    Transform the string S to a new string of length N as follows: 
+    if the length of S is greater than N then remove its first characters, 
+    if the length of S is less than N then add characters "." to the beginning of S.
  */
 
 export function F(N: number, C: string) {
