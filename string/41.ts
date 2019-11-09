@@ -8,7 +8,7 @@ export function F(S: string) {
   let i = 0;
   let k = 0;
 
-  for (i = 1; i <= S.length; i++) {
+  for (i = 1; i <= S.length - 1; i++) {
     if (S[i] == " " && S[i - 1] != " ") {
       k = k + 1;
     }
