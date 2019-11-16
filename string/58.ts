@@ -1,8 +1,9 @@
 /**
-  String 57. 
-       A string with an English sentence is given. Remove all superfluous blank 
-       characters in the string, so that its words were separated by exactly 
-       one blank character.
+  String 58. 
+       A string that contains a fully qualified path name (that is, 
+        the drive and directory parts, the file name and extension) 
+        is given. Extract the file name (without the path and extension) 
+        from the string.
  */
 
 export function F(S: string) {
