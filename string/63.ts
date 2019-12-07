@@ -19,7 +19,7 @@ export function F(S: string, k: number) {
     } else {
       if (S[i] >= "А" && S[i] <= "Я") {
         x = S[i].charCodeAt(0) + k;
-        if (x > 1103) {
+        if (x > "Я".charCodeAt(0)) {
           x = x - "Я".charCodeAt(0) + "А".charCodeAt(0) - 1;
         }
         Letter = String.fromCharCode(x);
